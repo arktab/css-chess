@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*
+:root {
+  --line-a;
+  --line-b;
+}*/
+h1{
+	width: 100px;
+	margin: 100px auto 50px;
+	font-size: 50px;
+}
+.container{
+	width: 1050px;
+	height: 1050px;
+	margin: 0 auto;
+	background: gray;
+	color: black;
+	border: 2px solid black;
+}
+.chess-board{
+	position: relative;
+	background: #FFF;
+	width: 1000px;
+	height: 1000px;
+	margin: 25px;
+	border: 2px solid black;
+}
+.cell{
+	position: absolute;
+	background: black;
+	height: 100px;
+	width: 100px;
+
+}
+.border{
+	text-align: center;
+	background: gray;
+	color: #FFF;
+	font-size: 30px;
+	line-height: 100px;
+}
+
+/* CHESSSS */
+.white .cell:not(:first-child):not(:last-child):before{
+	content: " ";
+	position: absolute;
+	height:75px;
+	width: 75px;
+	margin: 12.5px;
+	background: white;
+	border-radius: 50%;
+}
+ .black .cell:not(:first-child):not(:last-child):before{
+	content: " ";
+	position: absolute;
+	height:75px;
+	width: 75px;
+	margin: 12.5px;
+	background: gray;
+	border-radius: 50%;
+}
+
+.one .b-one{
+	left: 0;
+}
+.one .b-two{
+	left: 10%;
+}
+.one .b-three{
+	left: 20%;
+}
+.one .b-four{
+	left: 30%;
+}
+.one .b-five{
+
+	left: 40%;
+}
+.one .b-six{
+	left: 50%;
+}
+.one .b-seven{
+	left: 60%;
+}
+.one .b-eight{
+	left: 70%;
+}
+.one .b-nine{
+	left: 80%;
+}
+.one .b-ten{
+	left: 90%;
+}
+/*ROW TWO_______________________________________*/
+.two{
+	top:10%;
+}
+.two .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.two .c-one{
+	top:inherit;
+	left: 20%;
+}
+.two .c-two{
+	top:inherit;
+	left: 40%;
+}
+.two .c-three{
+	top:inherit;
+	left: 60%;
+}
+.two .c-four{
+	top:inherit;
+	left: 80%;
+}
+.two .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+
+/*ROW THREE_______________________________________*/
+.three{
+	top:20%;
+}
+.three .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.three .c-one{
+	top:inherit;
+	left: 10%;
+}
+.three .c-two{
+	top:inherit;
+	left: 30%;
+}
+.three .c-three{
+	top:inherit;
+	left: 50%;
+}
+.three .c-four{
+	top:inherit;
+	left: 70%;
+}
+.three .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+/*ROW FOUR_______________________________________*/
+.four{
+	top:30%;
+}
+.four .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.four .c-one{
+	top:inherit;
+	left: 20%;
+}
+.four .c-two{
+	top:inherit;
+	left: 40%;
+}
+.four .c-three{
+	top:inherit;
+	left: 60%;
+}
+.four .c-four{
+	top:inherit;
+	left: 80%;
+}
+.four .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+
+/*ROW FIVE_______________________________________*/
+.five{
+	top:40%;
+}
+.five .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.five .c-one{
+	top:inherit;
+	left: 10%;
+}
+.five .c-two{
+	top:inherit;
+	left: 30%;
+}
+.five .c-three{
+	top:inherit;
+	left: 50%;
+}
+.five .c-four{
+	top:inherit;
+	left: 70%;
+}
+.five .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+/* /// */
+/*ROW SIX_______________________________________*/
+.six{
+	top:50%;
+}
+.six .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.six .c-one{
+	top:inherit;
+	left: 20%;
+}
+.six .c-two{
+	top:inherit;
+	left: 40%;
+}
+.six .c-three{
+	top:inherit;
+	left: 60%;
+}
+.six .c-four{
+	top:inherit;
+	left: 80%;
+}
+.six .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+
+/*ROW SEVEN_______________________________________*/
+.seven{
+	top: 60%;
+}
+.seven .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.seven .c-one{
+	top:inherit;
+	left: 10%;
+}
+.seven .c-two{
+	top:inherit;
+	left: 30%;
+}
+.seven .c-three{
+	top:inherit;
+	left: 50%;
+}
+.seven .c-four{
+	top:inherit;
+	left: 70%;
+}
+.seven .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+/*ROW eight_______________________________________*/
+.eight{
+	top: 70%;
+}
+.eight .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.eight .c-one{
+	top:inherit;
+	left: 20%;
+}
+.eight .c-two{
+	top:inherit;
+	left: 40%;
+}
+.eight .c-three{
+	top:inherit;
+	left: 60%;
+}
+.eight .c-four{
+	top:inherit;
+	left: 80%;
+}
+.eight .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+
+/*ROW NINE_______________________________________*/
+.nine{
+	top:80%;
+}
+.nine .c-bor-one{
+	top:inherit;
+	left: 0;
+}
+.nine .c-one{
+	top:inherit;
+	left: 10%;
+}
+.nine .c-two{
+	top:inherit;
+	left: 30%;
+}
+.nine .c-three{
+	top:inherit;
+	left: 50%;
+}
+.nine .c-four{
+	top:inherit;
+	left: 70%;
+}
+.nine .c-bor-two{
+	top:inherit;
+	left: 90%;
+}
+/*ROW TEN_______________________________________*/
+.ten{
+	top:90%;
+}
+.ten .b-one{
+	top:inherit;
+	left: 0;
+}
+.ten .b-two{
+	top:inherit;
+	left: 10%;
+}
+.ten .b-three{
+	top:inherit;
+	left: 20%;
+}
+.ten .b-four{
+	top:inherit;
+	left: 30%;
+}
+.ten .b-five{
+	top:inherit;
+	left: 40%;
+}
+.ten .b-six{
+	top:inherit;
+	left: 50%;
+}
+.ten .b-seven{
+	top:inherit;
+	left: 60%;
+}
+.ten .b-eight{
+	top:inherit;
+	left: 70%;
+}
+.ten .b-nine{
+	top:inherit;
+	left: 80%;
+}
+.ten .b-ten{
+	top:inherit;
+	left: 90%;
+}
