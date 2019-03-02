@@ -37,6 +37,9 @@
 	font-size: 30px;
 	line-height: 100px;
 }
+.row{
+	height:10%;
+}
 .row:not(:first-child):not(:last-child){
 	height: 20%;
 	position: relative;
@@ -48,14 +51,16 @@
 /*border____________*/
 .row:not(:last-child) .cell:first-child{
 	height: 200px;
+	background: #4e2020;
 }
 .row:not(:first-child):not(:last-child) .cell:last-child{
 	height: 200px;
+	background: #4e2020;
 }
-.row:first-child, .row:last-child{
-	height: 10%;
-	position: relative;
+.row:first-child .cell, .row:last-child .cell{
+	background: #4e2020;
 }
+
 /*--------------*/
 /* checkers-------------------------------------------*/
 .row:not(:first-child):nth-child(-n+3) .cell:not(:first-child):not(:last-child):before{
